@@ -1,0 +1,13 @@
+{
+  "mode": "exit",
+  "tag": "alpha",
+  "initialVersions": {
+    "@serescnn/common": "1.0.0",
+    "@serescnn/pkga": "0.0.0",
+    "@serescnn/pkgb": "1.0.0",
+    "@serescnn/pkgc": "2.0.0"
+  },
+  "changesets": [
+    "silly-geese-work"
+  ]
+}

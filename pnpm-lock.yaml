@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@serescnn/pkgc':
-        specifier: ^2.0.0
-        version: link:packages/pkgc
       typescript:
         specifier: ^5.4.2
         version: 5.4.2
