@@ -1,6 +1,6 @@
 {
   "name": "@serescnn/pkgc",
-  "version": "2.0.1-alpha.0",
+  "version": "2.1.0",
   "description": "",
   "main": "dist/index.js",
   "files": [
@@ -21,7 +21,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@serescnn/pkgb": "^1.0.1-alpha.0",
+    "@serescnn/pkgb": "^1.1.0",
     "antd": "^5.15.2"
   }
 }

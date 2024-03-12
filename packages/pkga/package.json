@@ -1,6 +1,6 @@
 {
   "name": "@serescnn/pkga",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0",
   "description": "",
   "main": "dist/index.js",
   "files": [
@@ -11,7 +11,9 @@
     "build": "rimraf dist && tsc index.ts --outDir dist",
     "prepublish": "pnpm run build"
   },
-  "keywords": [],
+  "keywords": [
+    "我是包@serescnn/pkga"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
