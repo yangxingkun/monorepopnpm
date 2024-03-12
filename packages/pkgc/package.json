@@ -1,0 +1,27 @@
+{
+  "name": "@serescnn/pkgc",
+  "version": "2.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "watch": "tsc index.ts --outDir dist --watch",
+    "build": "rimraf dist && tsc index.ts --outDir dist",
+    "prepublish": "pnpm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^5.0.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@serescnn/pkgb": "^1.0.0",
+    "antd": "^5.15.2"
+  }
+}

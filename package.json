@@ -1,0 +1,25 @@
+{
+  "name": "serescnn",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r --filter=./packages/* run build",
+    "start": "pnpm -r --filter=./packages/* run start",
+    "start:app1": "pnpm run start --filter @packages/app1",
+    "eject:app1": "pnpm run eject --filter @packages/app1",
+    "eject": "pnpm run -C packages/app1 eject && pnpm run -C packages/app2 start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@serescnn/pkgc": "^2.0.0",
+    "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "eslint": "^8.57.0"
+  }
+}
