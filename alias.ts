@@ -10,4 +10,3 @@ export const alias: Record<string, string> = {
   '@monorepoproject/pkgc': r('./packages/pkgc/'),
   '@monorepoproject/pkgd': r('./packages/pkgd/src/')
 }
-

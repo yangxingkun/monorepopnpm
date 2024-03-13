@@ -21,7 +21,7 @@
     "eject": "pnpm run -C packages/app1 eject && pnpm run -C packages/app2 start"
   },
   "keywords": [],
-  "author": "",
+  "author": "杨兴坤",
   "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
