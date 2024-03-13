@@ -1,0 +1,7 @@
+*/**.js
+*/**.d.ts
+packages/*/dist
+packages/*/lib
+packages/*/html
+html
+docs
