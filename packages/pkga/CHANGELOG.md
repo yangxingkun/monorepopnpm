@@ -1,5 +1,17 @@
 # @serescnn/pkga
 
+## 0.2.0
+
+### Minor Changes
+
+- 增加 read 哈哈哈
+
+## 0.2.0-alpha.0
+
+### Minor Changes
+
+- 增加 read 哈哈哈
+
 ## 0.1.0
 
 ### Minor Changes
