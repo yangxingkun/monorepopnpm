@@ -7,3 +7,9 @@ export function setupCounter(element: HTMLButtonElement) {
   element.addEventListener('click', () => setCounter(++counter))
   setCounter(0)
 }
+
+export const isEmail = (s: string) => {
+  return /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]{2,3}){1,2})$/.test(
+    s
+  )
+}

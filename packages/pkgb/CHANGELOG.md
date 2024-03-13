@@ -1,5 +1,13 @@
 # @serescnn/pkgb
 
+## 1.2.1
+
+### Patch Changes
+
+- 完结 撒花
+- Updated dependencies
+  - @serescnn/pkga@0.2.1
+
 ## 1.2.0
 
 ### Minor Changes

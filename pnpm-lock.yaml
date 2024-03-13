@@ -20,6 +20,9 @@ importers:
       '@serescnn/pkgc':
         specifier: workspace:^
         version: link:packages/pkgc
+      '@serescnn/pkgd':
+        specifier: workspace:^
+        version: link:packages/pkgd
       '@types/node':
         specifier: ^20.11.26
         version: 20.11.26
