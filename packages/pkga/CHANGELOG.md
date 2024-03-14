@@ -1,5 +1,11 @@
 # @serescnn/pkga
 
+## 0.2.2
+
+### Patch Changes
+
+- refactor:重构依赖关系
+
 ## 0.2.1
 
 ### Patch Changes

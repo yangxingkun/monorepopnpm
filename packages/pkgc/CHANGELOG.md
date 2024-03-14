@@ -1,5 +1,13 @@
 # @serescnn/pkgc
 
+## 2.2.2
+
+### Patch Changes
+
+- refactor:重构依赖关系
+- Updated dependencies
+  - @serescnn/pkgb@1.2.2
+
 ## 2.2.1
 
 ### Patch Changes

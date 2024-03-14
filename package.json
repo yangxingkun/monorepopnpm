@@ -25,8 +25,8 @@
   "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
-    "@serescnn/pkga": "workspace:^0.2.0",
-    "@serescnn/pkgb": "workspace:^1.2.0",
+    "@serescnn/pkga": "workspace:^",
+    "@serescnn/pkgb": "workspace:^",
     "@serescnn/pkgc": "workspace:^",
     "@serescnn/pkgd": "workspace:^",
     "@types/node": "^20.11.26",

@@ -1,5 +1,11 @@
 # @serescnn/pkgd
 
+## 0.1.1
+
+### Patch Changes
+
+- refactor:重构依赖关系
+
 ## 0.1.0
 
 ### Minor Changes
