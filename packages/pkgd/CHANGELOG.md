@@ -1,5 +1,11 @@
 # @serescnn/pkgd
 
+## 1.0.0
+
+### Major Changes
+
+- feat:private改成公有去掉 这个字段即可
+
 ## 0.1.1
 
 ### Patch Changes

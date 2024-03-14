@@ -390,6 +390,16 @@ pnpm changeset pre enter rc      # 发布 rc 版本
 npm create vite@latest
 
 ```
+也可以通过一下安装脚手架：
+
+```bash 
+
+pnpm dlx create-react-app packages/app1 --template typescript
+
+
+pnpm create vite@latest packages --template typescript
+
+```
 
 按照下图选项来设置：
 ![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/76c8ac6ecf334cf68a1fadb1db174c3f~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=454&h=258&s=9883&e=png&b=fdf6e3)
@@ -886,6 +896,13 @@ npx vitepress init
 
 
 ```
+> -r 就是递归去执行所有包下的 comand 命令
+
+也可以： 
+
+1. `"eject": "pnpm run -C packages/app1 eject && pnpm run -C packages/app2 start"`
+
+-C 是指在指定的路径下执行命令而不是在当前目录
 
 修改 pnpm-workspace.yaml 文件：
 
@@ -916,3 +933,16 @@ packages:
 5. Vue 组件库开发。
 
 这些需要我们更深一步的去探讨和研究！
+
+
+# 结尾
+
+1. 关于安装速度
+通过 benchmarks可以看到很多情况下 pnpm 的安装速度要更胜一筹，这是因为 pnpm 和其他包管理器的安装方式不一样:
+pnpm：每一个依赖都是单独地经历` resolve -> fetch -> write`， 并且所有依赖并行。
+其他：所有依赖共同经历 `resolve -> fetch -> write`。
+对于 pnpm, 最终的安装时间只取决于路径最长的那个依赖；对于其他包管理器来说每个阶段都要等待耗时最长的那个依赖的完成。举个例子，现在有 A 和 B 两个依赖, A 对应三个阶段的耗时分别是 1 2 3， B 对应三个阶段的耗时分别是 3 2 1 , 那么 pnpm 最终安装完成时间是：1 + 2 + 3 = 6 < 其他包管理器完成时间: 3 + 2 + 3 = 8。
+2. 关于节省空间
+因为 pnpm 默认所有依赖都放在磁盘的同一个地方，这些依赖可以被跨工程共享，所以说比较节省空间。这个其实 yarn 也支持， 使用 `enableGlobalCache:true` 就可以使用全局缓存，但是这样的话零安装就不能使用了, 一般不建议这么使用。
+3. 关于运行时依赖查找速度
+在运行时，pnpm 应该比不过 yarn, 因为 yarn 是通过 .pnp.cjs 直接告知 Node 依赖的位置(内部是重写了 require.resolve 方法)； 而 pnpm 中还是依靠 Node 层层查找，理论上会更慢。
