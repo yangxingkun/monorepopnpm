@@ -21,6 +21,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@serescnn/pkga": "^0.2.1"
+    "@serescnn/pkga": "^0.2.0"
   }
 }

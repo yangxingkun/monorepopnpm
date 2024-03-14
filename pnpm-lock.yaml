@@ -8,9 +8,12 @@ importers:
 
   .:
     dependencies:
-      vue:
-        specifier: ^3.4.21
-        version: 3.4.21(typescript@5.4.2)
+      '@serescnn/pkgc':
+        specifier: ^2.0.0
+        version: 2.2.1(react-dom@18.2.0)(react@18.2.0)
+      typescript:
+        specifier: ^5.4.2
+        version: 5.4.2
     devDependencies:
       '@changesets/cli':
         specifier: ^2.27.1
@@ -103,10 +106,6 @@ importers:
         version: 5.0.5
 
   packages/pkgb:
-    dependencies:
-      '@serescnn/pkga':
-        specifier: ^0.2.1
-        version: link:../pkga
     devDependencies:
       rimraf:
         specifier: ^5.0.5
@@ -115,8 +114,8 @@ importers:
   packages/pkgc:
     dependencies:
       '@serescnn/pkgb':
-        specifier: ^1.2.1
-        version: link:../pkgb
+        specifier: ^1.0.0
+        version: 1.2.1
       antd:
         specifier: ^5.15.2
         version: 5.15.2(react-dom@18.2.0)(react@18.2.0)
@@ -1628,16 +1627,41 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@volar/language-core': 1.11.1
-      '@volar/source-map': 1.11.1
-      '@vue/compiler-dom': 3.4.21
-      '@vue/shared': 3.4.21
-      computeds: 0.0.1
-      minimatch: 9.0.3
-      muggle-string: 0.3.1
-      path-browserify: 1.0.1
-      typescript: 5.4.2
-      vue-template-compiler: 2.7.16
+      '@babel/runtime': 7.24.0
+      '@rc-component/portal': 1.1.2(react-dom@18.2.0)(react@18.2.0)
+      classnames: 2.5.1
+      rc-motion: 2.9.0(react-dom@18.2.0)(react@18.2.0)
+      rc-resize-observer: 1.4.0(react-dom@18.2.0)(react@18.2.0)
+      rc-util: 5.39.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@serescnn/pkga@0.2.1:
+    resolution: {integrity: sha512-4Mz+4LZCrWXpmdbwpmHNLee3lDl77Wejy22pyX9pjz4u1yVRiUASqxYW9DBG4Of88LsqvreCqxGDxlodSUtegQ==}
+    dev: false
+
+  /@serescnn/pkgb@1.2.1:
+    resolution: {integrity: sha512-1Ajf+S5LBqdaeL5LBd/2hoY3Ydbk13KAuQ3xi7wNzwyYvbTRAOyfFRpBmyMdIr2EN+yBabIle2bsq3Z/fH8ONQ==}
+    dependencies:
+      '@serescnn/pkga': 0.2.1
+    dev: false
+
+  /@serescnn/pkgc@2.2.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-DUU164hqzPR2EfBx8QWACpIzHfWN0zzkThXJxWcCskmV7nZnFgE5XhSqir7EIpzAKjMay+i1YWpD15tW7NTu7Q==}
+    dependencies:
+      '@serescnn/pkgb': 1.2.1
+      antd: 5.15.2(react-dom@18.2.0)(react@18.2.0)
+    transitivePeerDependencies:
+      - date-fns
+      - luxon
+      - moment
+      - react
+      - react-dom
+    dev: false
+
+  /@types/minimist@1.2.5:
+    resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
     dev: true
 
   /@vue/reactivity@3.4.21:
