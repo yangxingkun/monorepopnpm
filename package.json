@@ -11,7 +11,9 @@
     "eject:app1": "pnpm run eject --filter @packages/app1",
     "eject": "pnpm run -C packages/app1 eject && pnpm run -C packages/app2 start"
   },
-  "keywords": ["this is test pnpm+workspace"],
+  "keywords": [
+    "this is test pnpm+workspace"
+  ],
   "author": "YangXingKun",
   "license": "MIT",
   "repository": {
@@ -20,6 +22,7 @@
   },
   "dependencies": {
     "@serescnn/pkgc": "^2.0.0",
+    "element-plus": "^2.6.1",
     "typescript": "^5.4.2"
   },
   "devDependencies": {
